@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Celestial Sphere - Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href ="wzodiac.css">
+        <style>
+            input[type=text] {
+                margin-right: 35px;
+            }
+            textarea {
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><a href = "index.html">Celestial Sphere</a> | Contact Us!</h2>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a> |</li> 
+                <li><a href = "findzodiac.html"> Find Your Zodiac</a> |</li> 
+                <li class = "dropdown-parent">Resources &amp; Articles
+                    <ul class = "dropdown">
+                        <li><a href = "planets.html" target = "_blank">Ruling Planets</a></li>
+                        <li><a href = "element.html" target = "_blank">Elements and Zodiacs</a></li>
+                        <li><a href = "lunarcycle.html" target = "_blank">Lunar Cycle</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contact.html"> | Contact</a></li>
+            </ul>
+        </nav>
+        <form action="mailto:contact@celestialsphere.com" method="post" enctype ="text/plain">
+            <div class = "wrapper">
+                <p>
+                    Contact Perseus with any questions, comments, or concerns!
+                </p>
+                <br><hr style = "color: #000001"><br>
+                <input name = "name " type ="text" placeholder = "Name" style = "height: 25px;">
+                <input name = "email " type ="text" placeholder = "Email" style = "height: 25px;">
+                <input name = "phone " type ="text" placeholder = "Phone" style = "height: 25px;"><br><br>
+                <textarea name = "comments " rows = "25" cols = "50" placeholder = "Leave your comments here!"></textarea>
+                <br>
+                <input type ="submit" value ="Send Comments">
+                <img style ="float: right" src ="contactPerseus.png" alt ="Persues walking" width ="150" height ="150">
+                <br style = "clear: right">
+                <p style ="float: right;">I look forward to reading your message!</p>
+            </div>
+        </form>
+        <footer>
+            <i>Copyright &copy; Celestial Sphere 2025. All rights reserved</i>
+        </footer>
+    </body>
+</html>

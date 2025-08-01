@@ -1,0 +1,119 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 2, 2025, 9:39:24 PM
+    Author     : breannclark
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.floatRight {
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.floatLeft {
+    float: left;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.wrapper {
+    background-color: hsla(250, 90%, 91%, 0.98);
+    padding: 15px;
+    margin: auto;
+    width: 730px;
+    height: 700px;
+    border: 7px ridge white
+}
+.dropdown-parent:hover .dropdown {
+    display: flex;
+    cursor: pointer;
+    color: lightskyblue;
+}
+.dropdown {
+    display: none;
+    flex-direction: column;
+}
+.dropdown a:hover {
+    color: lightskyblue;
+}
+body {
+    background-color: hsla(245, 70%, 33%, 1.0);
+    background-image: url(constellation.png);
+}
+h2 {
+    color: white;
+    text-shadow: 2px 3px 3px #000020;
+    background-image: linear-gradient(to right, hsla(250, 90%, 90%, 1.0), lightskyblue);
+    padding: 35px;
+    margin-bottom: 2px;
+
+}
+h2 a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #000020;
+    background-color: hsla(250, 90%, 85%, 1.0);
+    box-shadow: 5px 5px 15px #000020;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: lightskyblue;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    list-style: none;
+    background-color: hsla(250, 90%, 85%, 1.0);
+}
+img {
+    border-radius: 5px;
+}
+article {
+    background-color: hsla(250, 90%, 90%, 0.95);
+    max-width: 250px;
+    float: right;
+    padding: 5px;
+    margin-top: 2px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+input[type=button] {
+    height: 30px;
+    width: 115px;
+    background-color: lightskyblue;
+    border-radius: 3px;
+    margin-left: 32px;
+}
+input[type=submit] {
+    height: 30px;
+    width: 115px;
+    background-color: lightskyblue;
+    border-radius: 3px;
+}
+label {
+    color: white;
+}
+footer {
+    position: absolute;
+    bottom: -50px;
+    background-color: hsla(250, 90%, 85%, 1.0);
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+}

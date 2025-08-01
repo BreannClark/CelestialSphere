@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Celestial Sphere - Find Your Zodiac</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href ="wzodiac.css">
+        <style>
+            textarea {
+                padding: 15px;
+            }
+        </style>
+        <script type ="text/javascript">
+
+            function getZodiac() {
+                const monthInput = document.getElementById("month");
+                const dayInput = document.getElementById("day");
+                var month = parseInt(monthInput.value);
+                var day = parseInt(dayInput.value);
+
+                switch (month) {
+                    case 1: // January
+                        if (day <= 19) {
+                            return "Capricorn";
+                        } else
+                            return "Aquarius";
+                    case 2: // February
+                        if (day <= 18) {
+                            return "Aquarius";
+                        } else
+                            return "Pisces";
+                    case 3: // March
+                        if (day <= 20) {
+                            return "Pisces";
+                        } else
+                            return "Aries";
+                    case 4: // April
+                        if (day <= 19) {
+                            return "Aries";
+                        } else
+                            return "Taurus";
+                    case 5: // May
+                        if (day <= 20) {
+                            return "Taurus";
+                        } else
+                            return "Gemini";
+                    case 6: // June
+                        if (day <= 20) {
+                            return "Gemini";
+                        } else
+                            return "Cancer";
+                    case 7: // July
+                        if (day <= 22) {
+                            return "Cancer";
+                        } else
+                            return "Leo";
+                    case 8: // August
+                        if (day <= 22) {
+                            return "Leo";
+                        } else
+                            return "Virgo";
+                    case 9: // September
+                        if (day <= 22) {
+                            return "Virgo";
+                        } else
+                            return "Libra";
+                    case 10: // October
+                        if (day <= 22) {
+                            return "Libra";
+                        } else
+                            return "Scorpio";
+                    case 11: // November
+                        if (day <= 21) {
+                            return "Scorpio";
+                        } else
+                            return "Sagittarius";
+                    case 12: // December
+                        if (day <= 21) {
+                            return "Sagittarius";
+                        } else
+                            return "Capricorn";
+                }
+            }
+
+            function displayZodiac() {
+                var zodiac = getZodiac();
+                var text = document.createElement('textarea');
+                text.rows = 25;
+                text.cols = 45;
+                document.getElementById('div').appendChild(text);
+                if (zodiac == "Capricorn") {
+                    text.textContent = "Capricorn is an earth sign! Capricorn is a sign that represents time and responsibility. " +
+                            "With an inner state of independence and mastery of self control, they make excellent leaders that progress both " +
+                            "professionally and personally, however, they can be stubborn at times. Saturn is the ruling planet for Capricorns." +
+                            " Capricorns are represented as a goat with the tail of a fish.";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Capricorn! See the text area for more information about your sign.";
+                } else if (zodiac == "Aquarius") {
+                    text.textContent = "Aquarius is an air sign! It is different from all other signs. They can be eccentric and " +
+                            "energetic in their fight for freedom, or at times shy and quiet, afraid to express their true personality. " +
+                            "In any case, they are deep, logical thinkers who fight for idealistic causes, and they are highly adaptable. " +
+                            "Uranus is the ruling planet for Aquarius alongside Saturn, the traditional ruler. Aquarius is represented by a water bearer.";
+                    document.getElementById("perseus").textContent = "Awesome! You are an Aquarius! See the text area for more information about your sign.";
+                } else if (zodiac == "Pisces") {
+                    text.textContent = "Pisces is a water sign! Pisces are very friendly and often find themselves in company of " +
+                            "very different people. They are selfless, always willing to help others, and don't expect much in return. " +
+                            "They also have a very strong intuition of the life cycle. Neptune and Jupiter are the ruling planets of Pisces. " +
+                            "Pisces is represented as two fish swimming in harmony. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Pisces! See the text area for more information about your sign.";
+                } else if (zodiac == "Aries") {
+                    text.textContent = "Aries is a fire sign! Aries always marks the beginning of something energetic and turbulent. " +
+                            "They are always looking for dynamic, speed and competition, always being first in work or social gatherings. They " +
+                            "are one of the most active zodiac signs and often take action without thinking about it. They have a tendency to " +
+                            "be aggressive and impatient, venting frustrations to those around them. Mars is the ruling planet for Aries. Aries " +
+                            "is represented by a flying ram. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Aries! See the text area for more information about your sign.";
+                } else if (zodiac == "Taurus") {
+                    text.textContent = "Taurus is an earth sign! Practical and well grounded, Taurus is the sign that harvests the " +
+                            "fruits of labor. They like to surround themselves with love and beauty and turn greatly to the material world. " +
+                            "Stable and conservative, this is one of the most reliable signs of the zodiac, ready to endure and stick to their " +
+                            "choices. Venus is the ruling planet for Taurus. Taurus is represented by a roaming bull. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Taurus! See the text area for more information about your sign.";
+                } else if (zodiac == "Gemini") {
+                    text.textContent = "Gemini is an air sign! Expressive and quick-witted, Gemini represents two different " +
+                            "personalities in one. They are sociable and communicable, but have a tendency to suddenly get serious, " +
+                            "thoughtful, and restless. Mercury is the ruling planet for Gemini. Gemini is represented by caring twins. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Gemini! See the text area for more information about your sign.";
+                } else if (zodiac == "Cancer") {
+                    text.textContent = "Cancer is a water sign! Deeply intuitive and sentimental, Cancer can be one of the most " +
+                            "challenging zodiac signs to get to know. They become attached to people they keep close and are deeply " +
+                            "sympathetic. They are guided by their emotions and their hearts and have a hard time blending into the " +
+                            "world around them. Instead of having a ruling planet, Cancer is ruled by the Moon. Cancer is represented " +
+                            "by a brave crab.";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Cancer! See the text area for more information about your sign.";
+                } else if (zodiac == "Leo") {
+                    text.textContent = "Leo is a fire sign! They are dramatic, creative, self-confident, dominant and extremely " +
+                            "difficult to resist, able to achieve anything they want. As a result, they typically make great leaders in " +
+                            "their field. They are generoud, loyal, self confident, and have a healthy sense of humor, but can sometimes " +
+                            "neglect the needs of others. Like Cancer, Leo is not ruled by a planet, but ruled by the Sun. Leo is represented " +
+                            "by a lion. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Leo! See the text area for more information about your sign.";
+                } else if (zodiac == "Virgo") {
+                    text.textContent = "Virgo is an earth sign! They pay attention to the smallest details and their deep sense " +
+                            "of humanity makes them one of the most careful signs of the zodiac. They leave nothing to chance, and might " +
+                            "be closed off to the outer world. This sogn is often misunderstood because they won't accept their feelings " +
+                            "as valid when oppoosed to reason. They can be worried that they missed a detail that would be impossible to " +
+                            "fix, becoming overly critical and concerned with details no one else worries about. Mercury is the ruling planet " +
+                            "for Virgo. Virgo is represented by a goddess who sees goodness in all humanity. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Virgo! See the text area for more information about your sign.";
+                } else if (zodiac == "Libra") {
+                    text.textContent = "Libra is an air sign! People born under the sign of Libra are peaceful, fair, and they " +
+                            "hate being alone. Partnership is very important to them as they need someone who can mirror them. They are " +
+                            "always attempting to keep peace and they avoid conflict. Venus is the ruling planet for Libras. Libra is " +
+                            "represented by scales that measure our souls. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Libra! See the text area for more information about your sign.";
+                } else if (zodiac == "Scorpio") {
+                    text.textContent = "Scorpio is a water sign! Scorpios are passionate and assertive people with determination " +
+                            "and focus you rarely see in other zodiac signs. They are dedicated, resourceful, and fearless in the face " +
+                            "of challenges, making them great leaders. They can be distrustful and jealous with these suspicions leading " +
+                            "them to strange behavioral patterns. Pluto and Mars are the ruling planets for Scorpios. Scorpio is represented " +
+                            "by a scorpian warrior. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Scorpio! See the text area for more information about your sign.";
+                } else if (zodiac == "Sagittarius") {
+                    text.textContent = "Sagittarius is a fire sign! They can be curious and energetic, making them the travelors " +
+                            "of the zodiacs. Their philisophical view keeps them searching for the meaning of life. They are extraverts, " +
+                            "always optimistic, energetic, and ready for the changes that life throws. They are clear about their intentions " +
+                            "in sometimes absurd ways with no regard for tact or the feelings of others and need to learn to express their " +
+                            "views in a socially acceptable way. Jupiter is the ruling planet for Sagittarius. Sagittarius is represented by " +
+                            "an archer, who is a misunderstood healer. ";
+                    document.getElementById("perseus").textContent = "Awesome! You are a Sagittarius! See the text area for more information about your sign.";
+                }
+            }
+        </script>
+    <body>
+        <h2><a href = "index.html">Celestial Sphere</a> | Find Your Zodiac</h2>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a> |</li> 
+                <li><a href = "findzodiac.html"> Find Your Zodiac</a>|</li> 
+                <li class = "dropdown-parent">Resources &amp; Articles
+                    <ul class = "dropdown">
+                        <li><a href = "planets.html" target = "_blank">Ruling Planets</a></li>
+                        <li><a href = "element.html" target = "_blank">Elements and Zodiacs</a></li>
+                        <li><a href = "lunarcycle.html" target = "_blank">Lunar Cycle</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contact.html"> | Contact</a></li>
+            </ul>
+        </nav>
+        <div class = "floatRight">
+            <img src ="animalLogo.png" alt = "zodiac creature" width = "250" height = "250">
+            <br style = "clear: right">
+            <article id = "perseus">
+                Hi! My name is Perseus. I'll be your guide to finding your star sign. 
+                Enter your birth month as a number 1 (for January) to 12 (for December) 
+                and the day in the text box and your sign will be revealed!
+            </article>
+        </div>
+        <div class = "floatLeft">
+            <input id = "month" type ="text" placeholder = "Month" style = "height: 25px"><br><br>
+            <input id = "day" type ="text" placeholder = "Day" style = "height: 25px"><br><br>
+            <input type ="button" value ="Find Zodiac" onclick = "displayZodiac()">
+            <br><br><br>
+        </div>
+        <br style = "clear: left">
+        <div id = 'div' class = "floatLeft" style = "display: flex; flex-wrap: wrap;"></div>
+        <footer>
+            <i>Copyright &copy; Celestial Sphere 2025. All rights reserved</i>
+        </footer>
+    </body>
+</html>
