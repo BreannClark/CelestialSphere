@@ -43,7 +43,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 body {
     background-color: hsla(245, 70%, 33%, 1.0);
-    background-image: url(constellation.png);
+    background-image: url(../images/constellation.png);
 }
 h2 {
     color: white;
